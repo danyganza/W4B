@@ -60,6 +60,8 @@ position: relative;
 .page_footer {
     max-height: 10vh;
     background-color: green;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
 
 }
 
