@@ -1,9 +1,12 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 10px;
     
+}
 
-
+body {
+    display: grid;
+   min-height: 80vh;
 }
 
 
@@ -11,37 +14,48 @@
 
 
 .page_header {
-    max-height: 10vh;
+    min-height: 10vh;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     display: grid;
+    justify-items: center;
+    align-items: center;
     background-color: #0084FF;
  
+}
+
+#nav {
+    display: grid;
+    justify-content: end start;
 }
 
 .page_main {
     min-height: 80vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    place-content: center;
     border-radius: 10px;
-    padding-top: 50px;
-
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .section1 {
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
+.section2 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
 }
 
 
-
-
-
-
-#image1 {
-    width: 150px;
-    height: 150;
-}
 
 
 
@@ -50,6 +64,7 @@
     width: 100px;
     height: 40px;
 background-color: #0084FF;;
+border-radius: 15px;
 }
 
 
@@ -57,11 +72,21 @@ background-color: #0084FF;;
 #article1 {
     background-color: #0084FF;
     border-radius: 10px;
+
+    display: grid;
+    background-color: #B8DDFF;
+    place-items: center;
+    height: fit-content;
+    border-radius: 15px;
 }
+
 
 #article2 {
     background-color: #CAF0DB ;
-    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    height: fit-content;
+
 }
 
 
@@ -70,7 +95,51 @@ background-color: #0084FF;;
     display: grid;
     place-items: center;
     background-color: green;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 }
+
+#red {
+    display: grid;
+    background-color: #FFD2D2;
+    place-items: center;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+#yellow {
+    display: grid;
+    background-color: #FFE7C4;
+    place-items: center;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+
+#purple{
+    display: grid;
+    background-color: #D5D4F5;
+    place-items: center;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+#idea {
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    background-color: #9693E6;
+    border-radius: 15px;
+}
+
+#idea_man {
+    background-color: white;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+    
+
+
