@@ -6,7 +6,8 @@
 
 body {
     display: grid;
-    min-height: 80vh;
+    max-height: 80vh;
+
 }
 
 
@@ -15,20 +16,21 @@ body {
 
 .page_header {
     min-height: 10vh;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    display: grid;
+    display: flex;
     background-color: #0084FF;
+    justify-content: space-between;
+align-items: center
 
 }
 
-#nav {
-    display: grid;
-    justify-content: end start;
+#mene {
+    float: right;
 }
 
 .page_main {
     min-height: 80vh;
     display: grid;
+    place-content: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 
@@ -37,7 +39,8 @@ body {
 .section1 {
     display: grid;
     place-items: center;
-    width: 100%;
+    margin: 150px auto;
+    width: 70%;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 }
@@ -86,7 +89,7 @@ body {
     min-height: 10vh;
     display: grid;
     place-items: center;
-    background-color: green;
+    background-color: black;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 }
@@ -141,16 +144,14 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-#Rey {
-    display: grid;
-    background-color: #FFD2D2;
-    place-items: center;
-    height: fit-content;
-    border-radius: 15px;
-}
+
+
 
 #phone {
+    max-width: 320px;
     float: left;
+    border-radius: 15px;
+    margin right: 15px;
 }
 
 #tets1 {
@@ -185,9 +186,35 @@ body {
 }
 
 #white {
-    color: white;
+    color: rgb(255, 255, 255);
 }
     
 #more {
+    border-radius: 15px;
     background-color: #9693E6;
+}
+
+#light {
+    display: grid;
+    background-color: #D5D4F5;
+    place-items: center;
+    height: fit-content;
+    border-radius: 15px;
+   margin-bottom: 20px;
+}
+
+#yellow {
+    column-rule: #FFC166; 
+
+}
+
+#buttonn{
+    width: 200px;
+    align-items: baseline;
+background-color: #9693E6;
+border-radius: 15px;
+}
+
+#buttonnn {
+    border-radius: 15px;
 }
