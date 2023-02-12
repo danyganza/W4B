@@ -3,7 +3,10 @@
     padding: 2px;
 
 }
+body {
+display: grid;
 
+}
 
 .page_header {
     min-height: 10vh;
@@ -13,39 +16,72 @@
     background-color: #0084FF;
 }
 
-body {
-    width: 100%;
+main {
     display: grid;
 
 }
 
+
 #mene {
-float: right;
+    float: right;
 }
 
 .page_main {
     min-height: 80vh;
     display: grid;
     place-items: center;
-      margin-top: 10px;
-      min-width: 100%;
-
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 
 }
 
 .section1 {
     display: grid;
-    height: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    min-width: 100%;
+    border-radius: 15px;
+ grid-template-columns: 2fr 1fr;
+
+}
+
+#article1 {
+    min-height: 350px;
+    background-color: #B8DDFF;
+    border-radius: 15px;
+   
+
+   
+
+}
+#artlcle1>p {
+    float: left;
+text-align-last: center;
+}
+#code{
+    place-self: center;
+}
+ #p1{
+    text-align: center;
+ }
+
+ #p2{
+    float: left;
+ }
+
+#article2 {
+    background-color: #CAF0DB;
+    min-height: 350px;
+    border-radius: 15px;
+
 
 }
 
 .section2 {
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
+    width: 100%;
+    grid-column: 1fr 1fr 1fr;
 }
 
 
@@ -62,15 +98,8 @@ float: right;
 
 
 
-#article1 {
-    background-color: #0084FF;
-    display: grid;
-    background-color: #B8DDFF;
-    place-items: center;
-    height: fit-content;
-    border-radius: 15px;
 
-}
+
 #article1>p,
 #article1>h2 {
     margin-top: 15px;
@@ -78,19 +107,10 @@ float: right;
     letter-spacing: 1px;
 
 }
-    
 
 
 
-#article2 {
-    background-color: #CAF0DB;
-    display: grid;
-  
-    place-items: center;
-    border-radius: 15px;
-    height: max-content;
 
-}
 
 
 .page_footer {
@@ -98,12 +118,11 @@ float: right;
     display: grid;
     place-items: center;
     background-color: black;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 }
 
 #red {
-    display: grid;    
+    display: grid;
     background-color: #FFD2D2;
     place-items: center;
     height: fit-content;
@@ -115,8 +134,7 @@ float: right;
     background-color: #FFE7C4;
     place-items: center;
     height: fit-content;
-    padding-left: 20px;
-    padding-right: 20px;
+
     border-radius: 15px;
 }
 
@@ -130,6 +148,8 @@ float: right;
 
 .idea {
     display: grid;
+    width: 50%;
+    min-height: 600px;
     background-color: #0084FF;
     border-radius: 15px;
 
@@ -147,19 +167,22 @@ float: right;
     place-self: center;
     font-size: 30px;
     color: #9693E6;
-   
+
 }
+
 h4 {
     display: grid;
     place-items: center;
 }
-p{
+
+p {
     display: grid;
     place-items: center;
 }
+
 h2 {
     display: grid;
-place-items: center;
+    place-items: center;
 }
 
 .testimonials>img {
@@ -170,20 +193,16 @@ place-items: center;
 
 .testimonial {
     display: grid;
-    place-self: center;
-    width: 50%;
-
-    
+    place-items: center;
+    width: 100%;
 }
-
-
 
 
 #phone {
     max-width: 320px;
-    float: left;
+    float: right;
     border-radius: 15px;
-    
+
 }
 
 #tets1 {
@@ -222,12 +241,50 @@ place-items: center;
 }
 
 .benefits {
+    display: grid;
+    place-items: center;
     background-color: #9693E6;
-    height: max-content;
+    min-height: 100%;
+    max-width: 100%
+}
+   
+   
+.Getstarted {
+        display: grid;
+        place-items: center;
+        background-color: #9693E6;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        min-height: 100%;
+        max-width: 100%;
+        
+    }
+
+
+
+
+
+
+#light {
+    display: grid;
+    width: 300px;
+    background-color: #D5D4F5;
+   place-items: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+#h2o {
+    position: absolute; top: auto;
+    margin-bottom: 100px;
+    color: rgb(255, 255, 255);
+
 }
 
 #white {
     color: rgb(255, 255, 255);
+    display: grid;
+    justify-self: center;
 }
 
 #more {
@@ -235,14 +292,6 @@ place-items: center;
     background-color: #9693E6;
 }
 
-#light {
-    display: grid;
-    background-color: #D5D4F5;
-    place-items: center;
-    height: fit-content;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
 
 #yellow {
     column-rule: #FFC166;
@@ -260,7 +309,26 @@ place-items: center;
     border-radius: 15px;
 }
 
-.last {
-    height: max-content;
-}
+.lastt {
+
+        display: grid;
+        background-color: white;
+        min-height: 500px;
+        max-width: 80%;
+    }
+ #boss {
+    display: grid;
+    float: right;
+    object-fit: cover;
+    border-radius: 60%;
+    margin-left: 30px;
+ }
+
+ #last1{
+    display: grid;
+    float: right;
+    display: grid;
+    font-size: 30px;
+    color: #9693E6;
+ }
 
