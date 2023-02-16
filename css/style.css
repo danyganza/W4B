@@ -3,332 +3,194 @@
     padding: 2px;
 
 }
+
 body {
-display: grid;
+    display: grid;
+    width: 100%;
 
 }
 
 .page_header {
     min-height: 10vh;
     display: grid;
-    place-items: center;
+    place-content: center;
     grid-template-columns: 1fr 1fr;
     background-color: #0084FF;
 }
 
-main {
-    display: grid;
-
+#menu {
+    justify-self: end;
 }
+    
 
-
-#mene {
-    float: right;
-}
-
-.page_main {
-    min-height: 80vh;
+.pagemain {
     display: grid;
     place-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 100vw;
 
 
 }
 
 .section1 {
     display: grid;
-    place-items: center;
-    min-width: 100%;
-    border-radius: 15px;
- grid-template-columns: 2fr 1fr;
+   place-items: center;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    border-radius: 15%;
 
 }
 
 #article1 {
-    min-height: 350px;
+    display: grid;
+  place-items: center;
     background-color: #B8DDFF;
-    border-radius: 15px;
-   
-
-   
-
+    min-height: 570px;
+    border-radius: 3%;
+    margin-top: 40px;  
 }
-#artlcle1>p {
-    float: left;
-text-align-last: center;
-}
-#code{
-    place-self: center;
-}
- #p1{
+#article1>p{
     text-align: center;
- }
+}
 
- #p2{
-    float: left;
- }
 
 #article2 {
+    display: grid;
+    place-items: center;
     background-color: #CAF0DB;
-    min-height: 350px;
-    border-radius: 15px;
+    height: 325px;
+    border-radius: 3%;
+    margin-top: 40px;
 
+}
 
+#phone {
+    width: 250px;
+    height: 300px;
+}
+
+#code {
+    display: grid;
+    height: 100px;
 }
 
 .section2 {
     display: grid;
     place-items: center;
     width: 100%;
-    grid-column: 1fr 1fr 1fr;
-}
-
-
-
-
-
-#button_1 {
-    width: 100px;
-    height: 60px;
-    background-color: #0084FF;
-    ;
-    border-radius: 15px;
-}
-
-
-
-
-
-#article1>p,
-#article1>h2 {
-    margin-top: 15px;
-    line-height: 30px;
-    letter-spacing: 1px;
-
-}
-
-
-
-
-
-
-.page_footer {
-    min-height: 10vh;
-    display: grid;
-    place-items: center;
-    background-color: black;
 
 }
 
 #red {
-    display: grid;
     background-color: #FFD2D2;
-    place-items: center;
-    height: fit-content;
-    border-radius: 15px;
+    border-radius: 3%;
+    height: 326px;
 }
 
 #yellow {
-    display: grid;
     background-color: #FFE7C4;
-    place-items: center;
-    height: fit-content;
-
-    border-radius: 15px;
+    border-radius: 3%;
+    height: 326px;
 }
 
 #purple {
-    display: grid;
     background-color: #D5D4F5;
-    place-items: center;
-    height: fit-content;
-    border-radius: 15px;
+    border-radius: 3%;
+    height: 326px;
 }
 
 .idea {
     display: grid;
-    width: 50%;
-    min-height: 600px;
-    background-color: #0084FF;
-    border-radius: 15px;
-
+    place-items: center;
+    background-color:#9693E6
 }
 
 #idea_man {
-    background-color: white;
-    object-fit: cover;
+    background-color:#9693E6
+}
+
+
+
+
+.testimonials {
+    display: grid;
+    place-items: center;
+}
+
+p{
+    text-align: center;
+   line-height: 40px;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+
+
+ #tets1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+}
+#Nat {
+    background-color: #FFD2D2;
+    height: 550px;
     border-radius: 15px;
-
-}
-
-#h1 {
-    display: grid;
-    place-self: center;
-    font-size: 30px;
-    color: #9693E6;
-
-}
-
-h4 {
-    display: grid;
-    place-items: center;
-}
-
-p {
-    display: grid;
-    place-items: center;
-}
-
-h2 {
-    display: grid;
-    place-items: center;
-}
-
-.testimonials>img {
-    display: grid;
-    float: left;
-}
-
-
-.testimonial {
-    display: grid;
-    place-items: center;
-    width: 100%;
-}
-
-
-#phone {
-    max-width: 320px;
-    float: right;
-    border-radius: 15px;
-
-}
-
-#tets1 {
-    float: left;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#BOB {
-    display: grid;
-    background-color: #CAF0DB;
-    border-radius: 15px;
-    place-items: center;
-    height: 180px;
-    width: 800px;
-    margin-bottom: 20px;
 }
 
 #celia {
-
-    border-radius: 15px;
-    place-items: center;
     background-color: #FFE7C4;
-    height: 180px;
-    width: 800px;
-    margin-bottom: 20px;
+    height: 550px;
+    border-radius: 15px;
 }
 
-#Nat {
+#BOB{
+    background-color: #CAF0DB;
+    height: 550px;
     border-radius: 15px;
-    place-self: center;
-    background-color: #FFD2D2;
-    height: 180px;
-    width: 800px;
-    margin-bottom: 20px;
 }
+
 
 .benefits {
-    display: grid;
-    place-items: center;
     background-color: #9693E6;
-    min-height: 100%;
-    max-width: 100%
+    margin-top: 80px;
 }
-   
-   
-.Getstarted {
-        display: grid;
-        place-items: center;
-        background-color: #9693E6;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        min-height: 100%;
-        max-width: 100%;
-        
-    }
-
-
-
-
-
-
 #light {
-    display: grid;
-    width: 300px;
-    background-color: #D5D4F5;
-   place-items: center;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-#h2o {
-    position: absolute; top: auto;
-    margin-bottom: 100px;
-    color: rgb(255, 255, 255);
-
-}
-
-#white {
-    color: rgb(255, 255, 255);
-    display: grid;
-    justify-self: center;
-}
-
-#more {
-    border-radius: 15px;
-    background-color: #9693E6;
-}
-
-
-#yellow {
-    column-rule: #FFC166;
-
-}
-
-#buttonn {
-    width: 200px;
-    align-items: baseline;
-    background-color: #9693E6;
+    background-color: #dbdaeb;
+    margin-top: 30px;
+    height: 330px;
     border-radius: 15px;
 }
 
-#buttonnn {
-    border-radius: 15px;
+#boss {
+    border-radius: 100%;
 }
 
-.lastt {
+.Getstarted {
 
-        display: grid;
-        background-color: white;
-        min-height: 500px;
-        max-width: 80%;
-    }
- #boss {
-    display: grid;
-    float: right;
-    object-fit: cover;
-    border-radius: 60%;
-    margin-left: 30px;
- }
+background-color: #8884ed;
+    margin-top: 30px;
+    height: 560px;
+  
+}
 
- #last1{
+
+
+#pp {
+ color: #D5D4F5;
+}
+    
+
+
+.page_footer {
+    min-height: 15vh;
     display: grid;
-    float: right;
-    display: grid;
-    font-size: 30px;
-    color: #9693E6;
- }
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: black;
+}
 
