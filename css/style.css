@@ -6,7 +6,6 @@
 
 body {
     display: grid;
-    width: 100%;
 
 }
 
@@ -26,7 +25,7 @@ body {
 .pagemain {
     display: grid;
     place-items: center;
-    width: 100vw;
+   
 
 
 }
@@ -73,31 +72,43 @@ body {
     display: grid;
     place-items: center;
     width: 100%;
+    margin-bottom: 100px;
+    
 
 }
 
 #red {
     background-color: #FFD2D2;
     border-radius: 3%;
-    height: 326px;
+    height: 340px;
+    width: 90%;
+    margin-top: 15px;
 }
 
 #yellow {
     background-color: #FFE7C4;
     border-radius: 3%;
-    height: 326px;
+    height: 340px;
+    width: 90%;
+    margin-top: 15px;
 }
+
+
 
 #purple {
     background-color: #D5D4F5;
     border-radius: 3%;
-    height: 326px;
+    height: 340px;
+    width: 90%;
+    margin-top: 15px;
 }
 
 .idea {
     display: grid;
     place-items: center;
-    background-color: #9693E6
+    background-color: #9693E6;
+    height: 1000px;
+   
 }
 
 #idea_man {
@@ -138,18 +149,21 @@ h3 {
     background-color: #FFD2D2;
     height: 550px;
     border-radius: 15px;
+    width: 70%;
 }
 
 #celia {
     background-color: #FFE7C4;
     height: 550px;
     border-radius: 15px;
+    width: 70%;
 }
 
 #BOB {
     background-color: #CAF0DB;
     height: 550px;
     border-radius: 15px;
+    width: 70%;
 }
 
 
@@ -195,31 +209,476 @@ h3 {
 
 
 
-@media only screen and (min-width: 600px) {
+
+
+ @media only screen and (min-width: 600px){
+
+  
+
+.page_header {
+    min-height: 10vh;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: #0084FF;
+}
+
+#menu {
+    justify-self: end;
+}
+
+
+.pagemain {
+    display: grid;
+    place-items: center;
+   
+
+
+}
+
+.section1 {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15%;
+
+}
+
+#article1 {
+    display: grid;
+ float: left;
+    width: 400px;
+    height: 400px;
+    background-color: #B8DDFF;
+    border-radius: 3%;
+    margin-top: 40px;
+}
+
+
+#article2 {
+    display: grid;
+float: right;
+  width: 200px;
+    background-color: #CAF0DB;
+    height: 570px;
+    border-radius: 3%;
+    margin-top: 40px;
+
+}
+
+#phone {
+    width: 280px;
+    height: 300px;
+}
+
+#code {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    height: 70px;
+}
+
+.section2 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin-bottom: 100px;
+    
+
+}
+
+#red {
+    background-color: #FFD2D2;
+    border-radius: 3%;
+    height: 460px;
+    width: 90%;
+    margin-top: 15px;
+}
+
+#yellow {
+    background-color: #FFE7C4;
+    border-radius: 3%;
+    height:460px;
+    width: 90%;
+    margin-top: 15px;
+}
 
 
 
+#purple {
+    background-color: #D5D4F5;
+    border-radius: 3%;
+    height: 460px;
+    width: 90%;
+    margin-top: 15px;
+}
+
+.idea {
+    display: grid;
+    place-items: center;
+    background-color: #9693E6;
+    height: 1000px;
+   
+}
+
+#idea_man {
+    background-color: #9693E6
+}
+
+
+
+
+.testimonials {
+    display: grid;
+    place-items: center;
+}
+
+p {
+    text-align: center;
+    line-height: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+
+#tets1 {
+    display: grid;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+}
+
+#Nat {
+    background-color: #FFD2D2;
+    height: 200px;
+    border-radius: 15px;
+    width: 90%;
+}
+
+#celia {
+    background-color: #FFE7C4;
+    height: 200px;
+    border-radius: 15px;
+    width: 90%;}
+
+#BOB {
+    background-color: #CAF0DB;
+    height: 200px;
+    border-radius: 15px;
+    width: 90%;
+}
+
+
+.benefits {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    background-color: #9693E6;
+    margin-top: 80px;
+}
+
+#light {
+    background-color: #dbdaeb;
+    margin-top: 30px;
+    height: 230px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.lastt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#boss {
+    border-radius: 100%;
+}
+#pp{
+    float: left;
+}
+#goo {
+    float: right;
+}
+
+.Getstarted {
+
+    background-color: #8884ed;
+    margin-top: 30px;
+    height: 560px;
+
+}
+
+
+
+#pp {
+    color: #D5D4F5;
+}
+
+
+
+.page_footer {
+    min-height: 15vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+}
+
+    
+
+ }
+ 
+
+
+
+
+ @media only screen and (min-width: 720px){
+
+  
+
+    .page_header {
+        min-height: 10vh;
+        display: grid;
+        place-content: center;
+        grid-template-columns: 1fr 1fr;
+        background-color: #0084FF;
+    }
+    
+    #menu {
+        justify-self: end;
+    }
+    
+    
+    .pagemain {
+        display: grid;
+        place-items: center;
+       
+    
+    
+    }
+    
+    .section1 {
+        display: grid;
+        width: 100%;
+        height: 400px;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 15%;
+    
+    }
+    
+    #article1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     float: left;
+     width: 65%;
+        height: 250px;
+        background-color: #B8DDFF;
+        border-radius: 3%;
+        margin-top: 40px;
+    }
+    
+    
+    #article2 {
+        display: grid;
+    float: right;
+      width: 34%;
+        background-color: #CAF0DB;
+        height: 300px;
+        border-radius: 3%;
+        margin-top: 40px;
+    
+    }
+    
+    #phone {
+        display: grid;
+        place-self: end;
+
+    }  
+    #p2
+    {display: grid;
+        text-align: left;
+        width: 300px;
+        
+    }
+    
+    #code {
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        height: 70px;
+    }
+  
+    
     .section2 {
         display: grid;
         place-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         width: 100%;
+        margin-bottom: 100px;
+        
+    
     }
-
- #article1 {
-   
+    
+    #red {
+        background-color: #FFD2D2;
+        border-radius: 3%;
+        height: 300px;
+        width: 90%;
+        margin-top: 15px;
+    }
+    
+    #yellow {
+        background-color: #FFE7C4;
+        border-radius: 3%;
+        height:300px;
+        width: 90%;
+        margin-top: 15px;
+    }
+    
+    
+    
+    #purple {
+        background-color: #D5D4F5;
+        border-radius: 3%;
+        height: 300px;
+        width: 90%;
+        margin-top: 15px;
+    }
+    
+    .idea {
         display: grid;
         place-items: center;
-        grid-template-columns: 2fr;
-        width: 100%;
+        background-color: #9693E6;
+        height: 1000px;
+       
     }
-
-        #article2 {
+    
+    #idea_man {
+        background-color: #9693E6
+    }
+    
+    
+    
+    
+    .testimonials {
         display: grid;
         place-items: center;
-        grid-template-columns: 1fr;
     }
+    
+    p {
+        text-align: center;
+        line-height: 20px;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    
+    
+    
+    #tets1 {
+        display: grid;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+    }
+    
+    #Nat {
+        background-color: #FFD2D2;
+        height: 200px;
+        border-radius: 15px;
+        width: 90%;
+    }
+    
+    #celia {
+        background-color: #FFE7C4;
+        height: 200px;
+        border-radius: 15px;
+        width: 90%;}
+    
+    #BOB {
+        background-color: #CAF0DB;
+        height: 200px;
+        border-radius: 15px;
+        width: 90%;
+    }
+    
+    
+    .benefits {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        background-color: #9693E6;
+        margin-top: 80px;
+    }
+    
+    #light {
+        background-color: #dbdaeb;
+        margin-top: 30px;
+        height: 230px;
+        width: 90%;
+        border-radius: 15px;
+    }
+    
+    .lastt {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #boss {
+        border-radius: 100%;
+    }
+    #pp{
+        float: left;
+    }
+    #goo {
+        float: right;
+    }
+    
+    .Getstarted {
+    
+        background-color: #8884ed;
+        margin-top: 30px;
+        height: 560px;
+    
+    }
+    
+    
+    
+    #pp {
+        color: #D5D4F5;
+    }
+    
+    
+    
+    .page_footer {
+        min-height: 15vh;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: black;
+    }
+    
+        
+    
+     }
 
- }
 
+
+
+
+ 
 
